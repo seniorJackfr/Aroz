@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Aroz">
     <meta property="og:description" content="Chat website for english speaking Algerians!">
-    <meta property="og:image" content="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png">
+    <meta property="og:image" content="https://imgur.com/K2rwVPG.png>
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -26,11 +26,15 @@
     <meta property="twitter:url" content="">
     <meta name="twitter:title" content="Aroz">
     <meta name="twitter:description" content="Chat website for english speaking Algerians!">
-    <meta name="twitter:image" content="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png">
+    <meta name="twitter:image" content="https://imgur.com/K2rwVPG.png">
     <style>
-      button {
+        .sendButton {
             color: #00ff90
         }
+        body {
+            background-color: #343434;
+        }
+        
       #chatSection {
         flex: 1;
         display: flex;
@@ -109,7 +113,7 @@
             <textarea type="text" id="messageInput" class="form-control rounded-0 border-0 bg-body-tertiary focus-ring focus-ring-dark" style="height: 40px; max-height: 150px;" placeholder="Type a message..." aria-label="Type a message..." aria-describedby="basic-addon2" 
             onkeydown="if(event.keyCode == 13) { this.style.height = (parseInt(this.style.height) + 10) + 'px'; return true; }"
             onkeyup="this.style.height = '40px'; var newHeight = (this.scrollHeight + 10 * (this.value.split(/\r?\n/).length - 1)) + 'px'; if (parseInt(newHeight) > 150) { this.style.height = '150px'; } else { this.style.height = newHeight; }" required></textarea>
-            <button id="sendButton" class="btn btn-primary rounded-0"><i class="bi bi-send-fill"></i></button>
+            <button id="sendButton" class="btn btn-primary rounded-0" style="color: #00ff90"><i class="bi bi-send-fill"></i></button>
           </div>
         </div>
       </div>
