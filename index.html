@@ -261,6 +261,13 @@
         });
       }
 
+        messageInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent default line break
+      sendButton.click(); // Trigger the send button click
+    }
+  });
+      
       function deleteMessage(messageId) {
         db.collection('messages').doc(messageId).delete().then(() => {
           console.log("Message successfully deleted!");
