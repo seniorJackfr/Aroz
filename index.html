@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <meta name="theme-color" content="#FF0000">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="">
@@ -19,6 +20,7 @@
     <meta property="og:title" content="Aroz">
     <meta property="og:description" content="Chat website for english speaking Algerians!">
     <meta property="og:image" content="https://imgur.com/K2rwVPG.png>
+    <meta name="theme-color" content="#00ff90">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -27,6 +29,7 @@
     <meta name="twitter:title" content="Aroz">
     <meta name="twitter:description" content="Chat website for english speaking Algerians!">
     <meta name="twitter:image" content="https://imgur.com/K2rwVPG.png">
+    <meta name="theme-color" content="#00ff90">
     <style>
     
         
@@ -92,7 +95,7 @@
         border-radius: 0;
       }
       .btn-primary {
-    background-color: #0bcd78 !important;
+    background-color: #00ff90 !important;
 }
     </style>
   </head>
@@ -261,13 +264,6 @@
         });
       }
 
-        messageInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault(); // Prevent default line break
-      sendButton.click(); // Trigger the send button click
-    }
-  });
-      
       function deleteMessage(messageId) {
         db.collection('messages').doc(messageId).delete().then(() => {
           console.log("Message successfully deleted!");
