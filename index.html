@@ -285,6 +285,13 @@
           });
         }
       };
+
+      messageInput.addEventListener('keydown', (event) => {
+  if (event.keyCode === 13) { // Check for Enter key press
+    event.preventDefault(); // Prevent default form submission behavior
+    sendButton.click(); // Simulate click on sendButton
+  }
+});
     </script>
   </body>
 </html>
