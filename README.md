@@ -15,7 +15,7 @@ This platform is ideal for:
 * Anyone seeking a safe and friendly space to chat in English.
 * Getting Started:
 
-Visit the Aroz Chat website (seniorjackfr.github.io/Aroz).
+Visit the Aroz Chat website (https://seniorjackfr.github.io/Aroz).
 Click on the **"Sign In with Google"** button.
 Grant permission to access your Google account.
 Start chatting!
