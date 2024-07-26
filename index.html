@@ -292,6 +292,26 @@
     sendButton.click(); // Simulate click on sendButton
   }
 });
+        // Optimistic update: Add message to UI immediately
+    displayMessage(message);
+
+    db.collection('messages').add(message)
+      .then(() => {
+        // Successful send
+      })
+      .catch(error => {
+        // Handle error, potentially remove optimistic update
+        console.error("Error sending message:", error);
+        // Remove the optimistic message from the UI if needed
+      });
+
+    messageInput.value = '';
+  }
+};
+
+function displayMessage(message) {
+  // Logic to add the message to the message area
+}
     </script>
   </body>
 </html>
